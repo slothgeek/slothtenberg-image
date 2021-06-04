@@ -1,0 +1,15 @@
+{
+	"apiVersion": 2,
+	"name": "sg-block/slothtenberg-image",
+	"title": "Slothtenberg Image",
+	"category": "widgets",
+	"icon": "format-image",
+	"description": "Example block written with ESNext standard and JSX support – build step required.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "slothtenberg-image",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

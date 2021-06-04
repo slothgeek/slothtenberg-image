@@ -1,0 +1,40 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-sg-block-slothtenberg-image {
+  margin: 0 0 1rem;
+
+  .graphic-picker-no-image{
+	border: 1px solid black;
+	padding: 1em;
+  }
+
+  .graphic-picker-with-image{
+	position: relative;
+
+	.toolbar{
+	  position: absolute;
+	  z-index: 2;
+	  top: 0;
+	  right: 0;
+	}
+  }
+
+  button{
+	margin-bottom: 12px !important;
+  }
+
+}
+
+.size-controls{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .components-input-control{
+	width: 48% !important;
+  }
+}

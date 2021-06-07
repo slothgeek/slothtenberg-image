@@ -82,12 +82,12 @@ export default function Edit({ attributes, setAttributes }) {
 					<div className="toolbar">
 						<IconButton
 							icon="edit"
-							label="Edit"
+							label={__('Edit', 'slothtenberg-image')}
 							onClick={ openEvent }
 						/>
 						<IconButton
 							icon="trash"
-							label="Delete"
+							label={__('Delete', 'slothtenberg-image')}
 							onClick={ () => { setAttributes({graphic: {} }) }    }
 						/>
 					</div>
@@ -129,12 +129,12 @@ export default function Edit({ attributes, setAttributes }) {
 									/>
 									<IconButton
 										icon= "yes"
-										label="Asignar"
+										label={ __("Asignar", "slothtenberg-image") }
 										onClick={ () => { setAttributes( { graphic: { ...attributes.graphic, url:popoverLink } } ) } }
 									/>
 									<IconButton
 										icon= "no-alt"
-										label="Cerrar"
+										label={ __("Cerrar", "slothtenberg-image") }
 										onClick={ () => { togglePopover() } }
 									/>
 								</div>

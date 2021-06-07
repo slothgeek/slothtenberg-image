@@ -2,7 +2,7 @@
 	"apiVersion": 2,
 	"name": "sg-block/slothtenberg-image",
 	"title": "Slothtenberg Image",
-	"category": "widgets",
+	"category": "media",
 	"icon": "format-image",
 	"description": "Example block written with ESNext standard and JSX support – build step required.",
 	"supports": {

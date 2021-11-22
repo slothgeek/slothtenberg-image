@@ -70,7 +70,7 @@ export default function Edit({ attributes, setAttributes }) {
 		)
 	}
 
-	const getImageButton = (openEvent, url, alt) => {
+	const getImageButton = (openEvent, url, alt, width, height) => {
 		if(url) {
 			return (
 				<div className='graphic-picker-with-image'>
@@ -78,6 +78,8 @@ export default function Edit({ attributes, setAttributes }) {
 						src={ url }
 						className="image"
 						alt={alt}
+						width={ width }
+						height={ height }
 					/>
 					<div className="toolbar">
 						<IconButton
@@ -156,7 +158,7 @@ export default function Edit({ attributes, setAttributes }) {
 				className="center-align"
 				onSelect={ (media) => { setAttributes( {graphic:{url: media.url, alt: media.alt}} ) } }
 				type="image"
-				render={ ({ open }) => getImageButton(open, attributes.graphic.url, attributes.graphic.alt) }
+				render={ ({ open }) => getImageButton(open, attributes.graphic.url, attributes.graphic.alt, attributes.width, attributes.height) }
 			/>
 		</div>
 	);

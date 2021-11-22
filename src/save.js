@@ -29,8 +29,8 @@ export default function save({attributes}) {
 			{ ...useBlockProps.save() }
 			src={attributes.graphic.url}
 			alt={attributes.graphic.alt}
-			width={ attributes.width > 0 &&  attributes.width }
-			height={ attributes.height > 0 &&  attributes.height }
+			width={ attributes.width }
+			height={ attributes.height }
 		/>
 	);
 }

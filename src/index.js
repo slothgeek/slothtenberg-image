@@ -36,10 +36,12 @@ registerBlockType( 'sg-block/slothtenberg-image', {
 			default: {}
 		},
 		width:{
-			type: 'number'
+			type: 'text',
+			default: ''
 		},
 		height:{
-			type: 'number'
+			type: 'text',
+			default: ''
 		}
 	},
 	/**
